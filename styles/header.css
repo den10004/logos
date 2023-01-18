@@ -1,0 +1,175 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 72px;
+  background: #f2f6f7;
+  padding: 36px 0 25px 22px;
+  display: grid;
+  display: grid;
+  grid-template-rows: 67px 89px 379px 200px;
+  grid-template-columns: 1fr;
+  height: 800px;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    display: none;
+  }
+}
+
+.header-min {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .header-min {
+    display: flex;
+    width: 100%;
+    background: #f2f6f7;
+    padding: 20px;
+    align-items: center;
+    height: 92px;
+    justify-content: space-between;
+  }
+}
+
+.header-min-logo {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.header:hover {
+  width: 224px;
+  transition: 0.3s;
+}
+
+.header__min {
+  display: block;
+  height: 46px;
+}
+
+.header__max {
+  display: none;
+}
+
+.header:hover .header__min {
+  display: none;
+}
+
+.header:hover .header__max {
+  display: block;
+  font-size: 40px;
+}
+
+.header:hover .burger {
+  display: none;
+}
+
+.header__address_tel {
+  display: none;
+}
+
+.header__address_tel > h5 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  align-items: center;
+}
+
+.header__address_tel > span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.header:hover .header__address_tel {
+  display: block;
+  align-items: center;
+}
+.header__menu {
+  cursor: pointer;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-template-columns: 1fr;
+  grid-row-gap: 16px;
+}
+
+.header__menu > svg {
+  cursor: pointer;
+}
+
+.header__menu-block {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-block > span {
+  display: none;
+}
+
+.header:hover .header__menu-block > span {
+  display: block;
+  margin-left: 21px;
+}
+
+.header__menu-block > img {
+  width: 25px;
+  height: 21px;
+}
+
+.burger {
+  height: 65px;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 425px) {
+  .burger {
+    height: 15px;
+  }
+}
+
+.header__search > svg {
+  margin-top: 175px;
+}
+
+.header:hover .header__search > svg {
+  display: none;
+}
+
+.header__search-input {
+  display: none;
+}
+
+.header:hover .header__search > .header__search-input {
+  display: block;
+  margin-top: 64px;
+}
+
+.header__search-input > input {
+  width: 176px;
+  height: 32px;
+  border: 1px solid #417a82;
+  border-radius: 20px;
+}
+
+.header__search-input-feedback {
+  margin-top: 32px;
+}
+
+.header__search-input-feedback > a {
+  font-size: 13px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.header-min-basket {
+  position: relative;
+}
+
+.header-min-basket-digit {
+  position: absolute;
+  top: -5px;
+  left: 15px;
+}
