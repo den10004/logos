@@ -38,6 +38,13 @@
   z-index: 1;
 }
 
+.pagination-wrapper {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 40px;
+}
+
 @media screen and (max-width: 1024px) {
   .main-slider-buttons-block {
     left: 40x;
@@ -50,12 +57,18 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .main-slider-buttons-block {
+    display: none;
+  }
+}
+
 .main-slider-next {
   z-index: 2;
   position: absolute;
   bottom: 5px;
   cursor: pointer;
-  left: -5px;
+  left: 0px;
 }
 
 .main-slider-prev {
