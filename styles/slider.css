@@ -29,3 +29,39 @@
   height: 100%;
   object-fit: cover;
 }
+
+.main-slider-buttons-block {
+  position: absolute;
+  bottom: 53px;
+  width: 50px;
+  left: 103px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-slider-buttons-block {
+    left: 40x;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-slider-buttons-block {
+    left: 20px;
+  }
+}
+
+.main-slider-next {
+  z-index: 2;
+  position: absolute;
+  bottom: 5px;
+  cursor: pointer;
+  left: -5px;
+}
+
+.main-slider-prev {
+  z-index: 2;
+  position: absolute;
+  bottom: 5px;
+  left: 45px;
+  cursor: pointer;
+}

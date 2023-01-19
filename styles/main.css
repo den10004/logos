@@ -9,6 +9,7 @@
   padding: 56px 103px 53px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -31,6 +32,7 @@
 
 .main__left {
   padding-top: 112px;
+  text-align: left;
 }
 
 @media screen and (max-width: 930px) {

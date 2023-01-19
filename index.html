@@ -172,6 +172,7 @@
           </div>
         </div>
       </header>
+      <!--
       <section class="main">
         <div class="main__left">
           <h2 class="CormorantInfant-normal main__left-text">
@@ -214,32 +215,162 @@
               </svg></button
           ></a>
         </div>
-      </section>
+      </section>-->
 
-      <section class="second">
-        <div class="swiper mySwiper">
+      <section class="main-block">
+        <div class="swiper main-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+              <section class="main">
+                <div class="main__left">
+                  <h2 class="CormorantInfant-normal main__left-text">
+                    Купите<br />
+                    <span class="CormorantInfant-bold">Что-то<br /></span> и еще
+                    <span class="CormorantInfant-bold">шторы</span>
+                  </h2>
+                  <p class="PTSansRegular">
+                    «Lorem» — производитель изделий для внутренней и внешней
+                    lorem
+                  </p>
+                  <a href="#"
+                    ><button class="button-white PTSansRegular">
+                      КАЛЬКУЛЯТОР
+                    </button></a
+                  >
+                </div>
+                <div class="main__right">
+                  <a href="#"
+                    ><button class="button-red PTSansRegular">
+                      ЗАКАЗАТЬ ЗАМЕР
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button class="button-ring basket-img">
+                      <svg
+                        width="20"
+                        height="16"
+                        viewBox="0 0 20 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.37885 3.74324H18.9599L17.7843 10.4054H7.59507L4.45993 1H0.541016"
+                          stroke="#417A82"
+                          stroke-linejoin="round"
+                        />
+                        <circle
+                          cx="9.16229"
+                          cy="13.9323"
+                          r="1.06757"
+                          stroke="#417A82"
+                        />
+                        <circle
+                          cx="16.217"
+                          cy="13.9323"
+                          r="1.06757"
+                          stroke="#417A82"
+                        />
+                      </svg></button
+                  ></a>
+                </div>
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class="main">
+                <div class="main__left">
+                  <h2 class="CormorantInfant-normal main__left-text">
+                    Купите<br />
+                    <span class="CormorantInfant-bold">Что-то<br /></span> и еще
+                    <span class="CormorantInfant-bold">шторы</span>
+                  </h2>
+                  <p class="PTSansRegular">
+                    «Lorem» — производитель изделий для внутренней и внешней
+                    lorem
+                  </p>
+                  <a href="#"
+                    ><button class="button-white PTSansRegular">
+                      КАЛЬКУЛЯТОР
+                    </button></a
+                  >
+                </div>
+                <div class="main__right">
+                  <a href="#"
+                    ><button class="button-red PTSansRegular">
+                      ЗАКАЗАТЬ ЗАМЕР
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button class="button-ring basket-img">
+                      <svg
+                        width="20"
+                        height="16"
+                        viewBox="0 0 20 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.37885 3.74324H18.9599L17.7843 10.4054H7.59507L4.45993 1H0.541016"
+                          stroke="#417A82"
+                          stroke-linejoin="round"
+                        />
+                        <circle
+                          cx="9.16229"
+                          cy="13.9323"
+                          r="1.06757"
+                          stroke="#417A82"
+                        />
+                        <circle
+                          cx="16.217"
+                          cy="13.9323"
+                          r="1.06757"
+                          stroke="#417A82"
+                        />
+                      </svg></button
+                  ></a>
+                </div>
+              </section>
+            </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="main-slider-buttons-block">
+            <div class="main-slider-next">
+              <svg
+                width="13"
+                height="24"
+                viewBox="0 0 13 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 1L0.999999 12L12 23" stroke="#052E4C" />
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="main-slider-prev">
+              <svg
+                width="13"
+                height="24"
+                viewBox="0 0 13 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 1L12 12L1 23" stroke="#052E4C" />
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".main-slider", {
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
         type: "fraction",
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".main-slider-next",
+        prevEl: ".main-slider-prev",
       },
     });
   </script>
